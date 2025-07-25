@@ -1,0 +1,98 @@
+  *{
+    box-sizing: border-box;/*para que los elementos no crescan mas del tamaño que les di*/
+    margin: 0;
+    padding: 0;
+} 
+ ul {
+    list-style: none; /* esto va a quitar los puntos de la lista */
+    display: flex;    /* horizontal */
+    gap: 15px;        /* para un pequeño spacio entre ellos */
+  }
+
+   a.link {
+color: #d1e2f2;
+    text-decoration: none; /* esto es para quitar el subrayado de las palabritas */
+  }
+
+  html {
+    scroll-behavior: smooth; /* esto nomas es para tener un mejor desplazamiento */
+}
+
+  body { 
+     overflow-x: hidden;
+    overflow-y: auto;   /* esto ayuda a que se desplace verticalmente sin problemas */ 
+    background: #eaf6ff;
+    color: #101522;
+    font-family: Arial, sans-serif;
+}
+
+nav {   
+  min-height: 85px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* asi el nav quedara por encima de todo */
+  height: auto;
+  background: rgb(0, 149, 255);
+  justify-content: center;
+  display: grid;
+  align-items: center;
+}
+.navcontent {
+  gap: 55px;  
+  height: auto;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+
+}
+.hiden{
+  display: none;
+}
+  .nav1 {
+    color: aliceblue;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+.nav2 {
+    color: #fff;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+    text-align: left;  
+}
+.nav3 {
+ font-size: 1.1rem;
+    transition: color 0.2s;
+    color: white;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+    h1{font-size: 3.5em;}
+    h2{font-size: 2.7em;}
+    p{font-size: 1.25em;}
+
+   
+   
+
+
+     .hero{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  height: 90vh;
+  color: white;
+  background-image: linear-gradient(
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)
+  ), url("../img/hero.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
