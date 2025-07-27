@@ -5,16 +5,92 @@
     <link rel="stylesheet" href="css/estilos.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portal de empleo</title>
+    <title>perfil</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<style>
+    .perfil-card {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  width: 100%;
+  display: flex; 
+  align-items: flex-start;
+  gap: 20px;
+  text-align: left; 
+}
+
+.perfil-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #007BFF;
+  flex-shrink: 0;
+}
+
+.perfil-info {
+  flex: 1;
+}
+
+.perfil-nombre {
+  font-size: 1.5em;
+  color: #333;
+  margin: 0 0 5px;
+}
+
+.perfil-profesion {
+  font-size: 1em;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.perfil-descripcion {
+  font-size: 0.95em;
+  color: #444;
+  margin-bottom: 20px;
+}
+
+.boton-contacto {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: #fff;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.boton-contacto:hover {
+  background-color: #0056b3;
+}
+.perfil-telefono {
+  font-size: 1em;
+  color: #555;
+  margin-bottom: 15px;
+}
+</style>
 </head>
 
-<body class="aaa"> 
-<img src="img/perfil.webp">
+<body> 
+    <div class="boton-regresar" onclick="history.back()" style="cursor: pointer; border-radius: 100%; background-color: #b3e5fc;" width="10px" height="10px">
+        <i class="fas fa-arrow-left"></i> Volver
+</div>
 
-<h2>Nombre de usuario: Inserte nombre</h2>
-<h2>Correo: Inserte correo</h2>
-<h2>Telefono: </h2>
+
+  <div class="perfil-card">
+    <img src="img/perfil.webp" alt="Foto de perfil" class="perfil-img" />
+    <h2 class="perfil-nombre">Laura</h2>
+    <p class="perfil-profesion">Desarrolladora web</p>
+        <p class="perfil-telefono">telefono:</p>
+    <p class="perfil-descripcion">
+experiencia en HTML, CSS y JavaScript. Apasionada por crear interfaces de usuario atractivas y funcionales. Siempre en busca de nuevos desafíos y oportunidades para aprender.
+    </p>
+    <br>
+    <a href="mailto:laura@gmail.com" class="boton-contacto">Contactar</a>
+    
+  </div>
+  
 
 </body>
 </html>

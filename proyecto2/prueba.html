@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>document</title>
+
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+    }
+
+.perfil-card {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  max-width: 700px;
+  display: flex; /* importante */
+  align-items: flex-start;
+  gap: 20px;
+  text-align: left; /* ya no centrado */
+}
+
+.perfil-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #007BFF;
+  flex-shrink: 0;
+}
+
+.perfil-info {
+  flex: 1;
+}
+
+.perfil-nombre {
+  font-size: 1.5em;
+  color: #333;
+  margin: 0 0 5px;
+}
+
+.perfil-profesion {
+  font-size: 1em;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.perfil-descripcion {
+  font-size: 0.95em;
+  color: #444;
+  margin-bottom: 20px;
+}
+
+.boton-contacto {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: #fff;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.boton-contacto:hover {
+  background-color: #0056b3;
+}
+
+  </style>
+</head>
+<body>
+  <form action="formulario.php" method="get">
+    <label for="nombre">nombre</label>
+    <input type="text" id="nombre" name="nombre">
+    <br> 
+    <label for="contraseña">contraseña</label>
+    <input type="password" id="contraseña" name="contraseña">
+    <br>
+    <input type="submit"/>
+</form>
+<hr>
+<form action="formulario.php" method="post">
+    <label for="nombre">nombre</label>
+    <input type="text" id="nombre" name="nombre">
+    <br> 
+    <label for="direccion">email</label>
+    <input type="email" id="direccion" name="direccion">
+    <br>
+    <textarea rows="10" id="comentario" placeholder="comentario"></textarea>
+    <input type="submit"/>
+</form>
+<hr>
+<form action="formulario.php" method="post">
+    <label for="nombre">nombre</label>
+    <input type="text" id="nombre" name="nombre">
+    <label for="apellido">apellido</label>
+    <input type="text" id="apellido" name="apellido">
+    <br>
+    <label for="sexo">masculino</label>
+    <input type="radio" id="masculino" name="sexo" value="masculino">
+    <label for="sexo">femenino</label>
+    <input type="radio" id="femnino" name="sexo" value="femenino"> 
+    <label for="sexo">otro</label>
+    <input type="radio" id="otro" name="sexo" value="otro">
+    <br>
+    <br> 
+    <label for="direccion">email</label>
+    <input type="email" id="direccion" name="direccion">
+    <br>
+    <br>
+    <label for="celular">celular</label>
+
+    <input type="tel" id="celular" name="celular" pattern="[0-9]{10}" placeholder="EJ: 3170913079" required>
+    <br>
+    
+    <p>direccion</p>
+    <label for="calle">direccion de calle</label>
+    <input type="text" id="calle" name="calle">
+    <br>
+    <label for="ciudad">ciudad</label>
+    <input type="text" id="ciudad" name="ciudad">
+    
+    <label for="provincia">estado/provincia</label>
+    <input type="text" id="provincia" name="provincia">
+    <br>
+    <label for="codigo">codigo postal</label>
+    <input type="text" id="codigo" name="codigo">
+    <br>
+    <input type="submit"/>
+    <hr>
+    <input type="range" min="-10" max="10" step="5" />
+    <input type="datetime-local">
+    <input type="button" onclick="alert('xd')" value="click">
+
+</form>
+  <div class="perfil-card">
+    <img src="https://via.placeholder.com/120" alt="Foto de perfil" class="perfil-img" />
+    <h2 class="perfil-nombre"></h2>
+    <p class="perfil-profesion"></p>
+    <p class="perfil-descripcion"></p>
+    <a href="mailto:laura@gmail.com" class="boton-contacto">Contactar</a>
+  </div>
+
+</body>
+</html>
